@@ -121,7 +121,7 @@ export default class SearchUtility implements SearchApiIndex {
     } else {
       var tokens: Array<string> = this._tokenize(this._sanitize(query));
 
-      return this._searchIndex.search(tokens, this._matchAnyToken);
+      return this._searchIndex.search(tokens);
     }
   };
 
